@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>
+        InterviewExSlider.
+    </title>
+</head>
+
+<body>
+    <div class="slideshow-container" onmouseover="displayArrows(true)" onmouseout="displayArrows(true)">
+
+        <div class="carousle">
+
+            <div class="mySlides fade" id="img0">
+                <img src="img0.gif" style="width:100%">
+                <img class="playButton" src="playButton.png">
+                <div class="slideText">
+                    <div class="cube" id="cube0"><label> 00</label></div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Cras sed felis eget velit aliquet sagittis id.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides fade" id="img1">
+                <img src="img1.gif" style="width:100%">
+                <img class="playButton" src="playButton.png">
+                <div class="slideText">
+                    <div class="cube" id="cube1">01</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore</div>
+                </div>
+
+            </div>
+
+            <div class="mySlides fade" id="img2">
+                <img src="img2.gif" style="width:100%">
+                <img class="playButton" src="playButton.png">
+                <div class="slideText">
+                    <div class="cube" id="cube2">02</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+            </div>
+
+            <div class="mySlides fade" id="img3">
+                <img src="img3.gif" style="width:100%">
+                <img class="playButton" src="playButton.png">
+                <div class="slideText">
+                    <div class="cube" id="cube3">03</div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. </div>
+                </div>
+            </div>
+
+            <a class="prev" onclick="showSlides(-1)">&#10094;</a>
+            <a class="next" onclick="showSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    
+    <div class="sliderBottomButtons">
+        <button class="sliderBottomButton sliderBottomButtonLeft" onclick="showSlides(-1,event)">Scale / Move
+            Left</button>
+        <button class="sliderBottomButton  sliderBottomButtonRight" onclick="showSlides(1,event)">Scale / Move
+            Right</button>
+    </div>
+    
+    <div class="circle" id="circle"></div>
+
+    <script src="slider.js"></script>
+</body>
+
+</html>
